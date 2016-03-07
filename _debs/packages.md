@@ -1,5 +1,6 @@
 ---
+permalink: /index.html
 ---
 {% for file in site.static_files %}
-  <p>{{ file.path }} | {{ file.extname }}</p>
+  {{ file.path }} | {{ file.extname }}
 {% endfor %}
